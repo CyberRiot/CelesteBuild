@@ -181,8 +181,8 @@ char* read_file(char* filePath, int* fileSize, BumpAllocator* bumpAllocator){
 }
 
 void write_file(char* filePath, char* buffer, int size){
-    SM_ASSERT(filePath, "No FilePath supplied!");
-    SM_ASSERT(buffer, "No Buffer Supplied!");
+    //SM_ASSERT(filePath, "No FilePath supplied!");
+    //SM_ASSERT(buffer, "No Buffer Supplied!");
     auto file = fopen(filePath, "wb");
     if(!file){
         SM_ERROR("Failed opening file: %s", filePath);
