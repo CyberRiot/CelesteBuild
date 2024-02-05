@@ -1,3 +1,4 @@
+#include "schnitzel_lib.h"
 
 // ##################################################################################
 //                                Platform Globals
@@ -80,8 +81,9 @@ int main(){
 
     platform_create_window(1200, 720, "Celeste");
     while(running){
-        //Update
+        //Event Tick
         platform_update_window();
+        SM_ASSERT(true, "Assertion hit!");
     }
 
     return 0;
