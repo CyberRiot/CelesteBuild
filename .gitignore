@@ -9,7 +9,6 @@
 *.lib
 build
 .vs
-.vscode
 c_cpp_properties.json
 settings.json
 .clangd
